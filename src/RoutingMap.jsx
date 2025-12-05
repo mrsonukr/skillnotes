@@ -15,6 +15,7 @@ import Refund from './pages/Refund'
 import Store from './pages/Store'
 import MyPurchases from './pages/MyPurchases'
 import ProductDetail from './pages/ProductDetail'
+import Shipping from './pages/Shipping'
 
 function Layout() {
   const location = useLocation();
@@ -37,6 +38,7 @@ function Layout() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/refund" element={<Refund />} />
+        <Route path="/shipping" element={<Shipping />} />
       </Routes>
       {!hideHeaderFooter && <Footer />}
     </>
